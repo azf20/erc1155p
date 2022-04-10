@@ -2,6 +2,8 @@
 
 ERC1155 implementation that deploys an ERC20-compatible child contract for all new token IDs. Tokens are DEX & NFT-compatible.
 
+_P stands for proxy / passthrough / party-time_
+
 Quickstart:
 ```
 foundryup
