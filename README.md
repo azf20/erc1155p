@@ -1,6 +1,10 @@
 # ERC1155P
 
-ERC1155 implementation that deploys an ERC20-compatible child contract for all new token IDs. Tokens are DEX & NFT-compatible.
+ERC1155P is ERC1155 compatible, but clones an ERC20-compatible child (ERC20P) via CREATE2 for all new token IDs.
+
+State is stored in the parent ERC1155P contract, but users can interact with either the parent or children via the standard interfaces. Tokens are therefore simultaneously DEX & NFT-compatible. The additional overhead is in inter-contract calls & emitted events.
+
+ERC1155P is an abstract contract. ExampleERC1155P.sol is an example implementation, whose functionality is illustrated in `/src/test/ERC1155P.t.sol`.
 
 _P stands for proxy / passthrough / party-time_
 
