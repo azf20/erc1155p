@@ -5,8 +5,12 @@ ERC1155 implementation that deploys an ERC20-compatible child contract for all n
 _P stands for proxy / passthrough / party-time_
 
 Quickstart:
+
 ```
+// if foundry is not installed (from https://book.getfoundry.sh/getting-started/installation.html)
+curl -L https://foundry.paradigm.xyz | bash
 foundryup
+// build & test
 forge build
 forge test
 ```
